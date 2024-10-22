@@ -3,6 +3,7 @@ const nextConfig = {
   basePath: "/crm", // แทนที่ <REPO_NAME> ด้วยชื่อ repository ของคุณ
   assetPrefix: "/crm/", // ทำให้สามารถเรียก asset ได้จาก basePath
   reactStrictMode: true,
+  output: "export",
 };
 
 export default nextConfig;
