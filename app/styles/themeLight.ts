@@ -2,15 +2,15 @@ import type { ThemeConfig } from "antd";
 
 const themeLight: ThemeConfig = {
   token: {
-    colorPrimary: "#1e4c92",
-    colorInfo: "#1e4c92",
-    colorLink: "#00bfff",
+    colorPrimary: "#33363D",
+    colorInfo: "#96C65E",
+    colorLink: "#CCCAB0",
     fontSize: 16,
-    colorSuccess: "#4caf50",
-    colorWarning: "#ffc107",
-    colorError: "#f44336",
+    colorSuccess: "#95D5B2",
+    colorWarning: "#F2CC8F",
+    colorError: "#F28482",
     colorTextBase: "#000000",
-    colorBgBase: "#ffffff",
+    colorBgBase: "#FFFFFF",
     sizeStep: 4,
     borderRadius: 12,
   },
@@ -26,13 +26,19 @@ const themeLight: ThemeConfig = {
       borderRadiusSM: 10,
     },
     Layout: {
-      bodyBg: "rgb(255,255,255)",
+      headerBg: "#F4F4F4",
+      siderBg: "#F4F4F4",
+      bodyBg: "#F4F4F4",
     },
     Menu: {
-      fontSize: 14,
-      subMenuItemBg: "rgba(0,0,0,0)",
+      fontSize: 15,
       itemHeight: 40,
-      colorSplit: "rgb(255,255,255)",
+      subMenuItemBg: "transparent",
+      colorSplit: "transparent",
+      colorItemBg: "#F4F4F4",
+      colorItemText: "#000000",
+      colorItemBgHover: "#CCCAB0",
+      colorItemBgSelected: "#96C65E",
     },
     Input: {
       controlHeight: 40,
@@ -56,15 +62,18 @@ const themeLight: ThemeConfig = {
       controlInteractiveSize: 20,
     },
     Calendar: {
-      controlItemBgActive: "rgb(30,76,146)",
-      colorPrimary: "rgb(255,255,255)",
+      fullBg: "#F4F4F4",
+      controlItemBgActive: "#96C65E",
+      colorPrimary: "#FFFFFF",
     },
     Segmented: {
       controlHeight: 36,
     },
     Table: {
-      headerBg: "rgba(30,76,146,0.3)",
+      headerBg: "#33363D",
+      headerColor: "#F4F4F4",
       lineHeight: 2,
+      fontSize: 14,
     },
     Spin: {
       dotSize: 24,

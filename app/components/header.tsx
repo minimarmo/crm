@@ -12,8 +12,6 @@ const AppHeader: React.FC<{ onThemeToggle: () => void; isDark: boolean }> = ({
   return (
     <Header
       style={{
-        background: "#1e4c92",
-        color: "#fff",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",

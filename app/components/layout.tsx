@@ -13,27 +13,36 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [isDark, setIsDark] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
 
   const toggleTheme = () => {
     setIsDark((prev) => !prev);
+  };
+
+  const toggleCollapsed = () => {
+    setCollapsed(!collapsed);
   };
 
   return (
     <ConfigProvider theme={isDark ? themeDark : themeLight}>
       <Layout style={{ minHeight: "100vh" }}>
         {/* Sidebar */}
-        <Sidebar />
+        <Sidebar collapsed={collapsed} onCollapse={toggleCollapsed} />
 
         {/* Layout หลักสำหรับ Header และ Content */}
-        <Layout style={{ marginLeft: 200 }}>
+        <Layout style={{ marginLeft: collapsed ? 80 : 240 }}>
           {/* Header */}
           <AppHeader onThemeToggle={toggleTheme} isDark={isDark} />
 
           {/* Content */}
-          <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
-            <div style={{ padding: 24, background: "#fff", minHeight: "80vh" }}>
-              {children}
-            </div>
+          <Content
+            style={{
+              overflow: "initial",
+              padding: 16,
+              minHeight: "calc(100vh - 64vh)",
+            }}
+          >
+            {children}
           </Content>
         </Layout>
       </Layout>

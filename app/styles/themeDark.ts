@@ -2,15 +2,15 @@ import type { ThemeConfig } from "antd";
 
 const themeDark: ThemeConfig = {
   token: {
-    colorPrimary: "#1e4c92", // สามารถคงไว้ได้
+    colorPrimary: "#96C65E",
     colorInfo: "#1e4c92",
     colorLink: "#00bfff",
     fontSize: 16,
-    colorSuccess: "#4caf50",
-    colorWarning: "#ffc107",
-    colorError: "#f44336",
-    colorTextBase: "#ffffff", // เปลี่ยนเป็นสีขาว
-    colorBgBase: "#000000", // เปลี่ยนพื้นหลังเป็นสีดำ
+    colorSuccess: "#95D5B2",
+    colorWarning: "#F2CC8F",
+    colorError: "#F28482",
+    colorTextBase: "#ffffff",
+    colorBgBase: "#33363D",
     sizeStep: 4,
     borderRadius: 12,
   },
@@ -26,13 +26,20 @@ const themeDark: ThemeConfig = {
       borderRadiusSM: 10,
     },
     Layout: {
+      headerBg: "#000000",
+      siderBg: "#000000",
       bodyBg: "#000000",
     },
     Menu: {
-      fontSize: 14,
-      subMenuItemBg: "rgba(255, 255, 255, 0.1)", // ทำให้สีพื้นหลังของ SubMenu โปร่งแสง
+      fontSize: 15,
       itemHeight: 40,
-      colorSplit: "rgba(255, 255, 255, 0.2)", // สีแบ่งของ Menu
+      subMenuItemBg: "transparent",
+      colorSplit: "transparent",
+      colorItemBg: "#000000",
+      colorItemText: "#ffffff",
+      colorItemBgHover: "#33363D",
+      colorItemBgSelected: "#96C65E",
+      colorItemTextSelected: "#000000",
     },
     Input: {
       controlHeight: 40,
@@ -56,14 +63,16 @@ const themeDark: ThemeConfig = {
       controlInteractiveSize: 20,
     },
     Calendar: {
-      controlItemBgActive: "rgb(30,76,146)", // สามารถคงไว้ได้
-      colorPrimary: "rgb(255,255,255)", // เปลี่ยนเป็นสีขาว
+      fullBg: "#33363D",
+      controlItemBgActive: "#96C65E",
+      colorPrimary: "#000000",
     },
     Segmented: {
       controlHeight: 36,
     },
     Table: {
-      headerBg: "rgba(30,76,146,0.3)", // สามารถคงไว้ได้
+      headerBg: "#CCCAB0",
+      headerColor: "#33363D",
       lineHeight: 2,
     },
     Spin: {

@@ -7,7 +7,7 @@ const { Title } = Typography;
 export default function Home() {
   return (
     <List>
-      <Title level={2}>Welcome to the App</Title>
+      <Title level={2}>Receipts</Title>
     </List>
   );
 }
